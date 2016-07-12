@@ -16,4 +16,5 @@ It might also because they do it to endorse Google's search engine.
 [1] Chris Sevilleja: [Pretty URLs in AngularJS: Removing the #](https://scotch.io/tutorials/pretty-urls-in-angularjs-removing-the-hashtag)  
 [2] [MANIPULATING HISTORY FOR FUN & PROFIT](http://diveintohtml5.info/history.html)  
 [3] [Why should we avoid using hashbang url?](https://www.quora.com/Are-hashbang-URLs-a-recommended-practice)  
-[4] Tim Bray [Broken Links](http://www.tbray.org/ongoing/When/201x/2011/02/09/Hash-Blecch)  
+[4] Tim Bray [Broken Links](http://www.tbray.org/ongoing/When/201x/2011/02/09/Hash-Blecch)
+[5] [Mike Davies: Breaking the Web with hash-bangs](http://isolani.co.uk/blog/javascript/BreakingTheWebWithHashBangs)

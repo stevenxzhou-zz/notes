@@ -95,6 +95,7 @@ alt=”This is a chat program which requires a Java-compatible Web browser to ru
 <param name="cabbase" value="Client.cab">
 </applet>
 ```
+##### References  
 [1] [Accessibility in HTML5](http://www.clarissapeterson.com/2012/11/html5-accessibility/)  
 [2] [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)  
 [3] [Web Accessibility Checklist](https://www.utexas.edu/learn/accessibility/testing.html#design)  

@@ -7,19 +7,19 @@
 <img src="graphics/logo.gif" alt="University of Texas" / >
 ```
 ###### 2. Supply empty "alt" tags for unessential images
-
+```html
 <image src="graphics/spacer.gif" alt="" / >
-
+```
 ###### 3. Create Meaningful Links
-
+```html
 Bad Example: <a href="http://www.utexas.edu/">click here"</a>
 Good Example: <a href="http://www.utexas.edu/">University of Texas at Austin</a>
-
+```
 ###### 4.  Allow users to skip over navigational links
-
+```html
 <a href="#main_content">Skip navigational links</a>...
 ...<a name="main_content"></a>
-
+```
 ###### 5. Data Tables - Use Headers
 ```html
 <TABLE border="1">
@@ -95,7 +95,7 @@ alt=”This is a chat program which requires a Java-compatible Web browser to ru
 <param name="cabbase" value="Client.cab">
 </applet>
 ```
-[1] [Accessibility in HTML5](http://www.clarissapeterson.com/2012/11/html5-accessibility/)
-[2] [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)
-[3] [Web Accessibility Checklist](https://www.utexas.edu/learn/accessibility/testing.html#design)
-[4] [Accessible HTML Samples](https://www.utexas.edu/learn/accessibility/samplehtml.html)
+[1] [Accessibility in HTML5](http://www.clarissapeterson.com/2012/11/html5-accessibility/)  
+[2] [Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20/)  
+[3] [Web Accessibility Checklist](https://www.utexas.edu/learn/accessibility/testing.html#design)  
+[4] [Accessible HTML Samples](https://www.utexas.edu/learn/accessibility/samplehtml.html)  

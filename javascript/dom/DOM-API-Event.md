@@ -19,27 +19,6 @@ DOM提供三种方式来触发监听方法listener
 
 #### 3. 定义一个Event对象
 可以通过如下方法自定义，并触发一个Event对象
-```javascript#### EventTarget接口的三个方法
->`Element`, `document`节点，`window`对象都实现了这个接口，另外`XMLHttpRequest, AudioNode, AudioContext`等浏览器内置对象也实现了这个接口。所有的这些都可以共享`addEventListener(), removeEventListener(), dispatchEvent()`这三种方法。
-
-需要特别注意的是`addEventListener()`有三个参数, 分别是`type, listener, useCapture`. 其中`useCapture`在老式浏览器中非可选参数，所以必须写。在新浏览器中为可选，默认为`False`, 表示在从window向下遍历元素的时候，每当发现这个名字的事件，不要当即触发，而只在冒泡阶段，也就是发现Target之后，往回向window遍历的时候再触发。主要涉及的就是想要listener以什么样的顺序被激活。至上而下还是至下而上，默认是至下而上。
-
-`dispatchEvent()`是用来触发事件的，一般情况下返回值为`true`，但是如果事件被阻止触发`Event.preventDefault()`, 返回值为`false`。
-
-#### 监听函数
-DOM提供三种方式来触发监听方法listener
-1. 通过Element的事件属性，例如`onclick=‘console.log(‘触发事件’)’`, 这个方法只会在冒泡阶段触发。
-2. 直接在Js中通过Element节点来触发， 如`div.onclick = function(){console.log(‘触发事件’)};`，这个方法也只会在冒泡阶段触发。
-3. 上面提到过的`addEventListener()`方法。这个可以设定是想在捕获阶段还是冒泡阶段触发。还可以针对同一个事件，添加多个监听函数。另外还可以部署在`window`, `XMLHttpRequest`的上面。因此推荐使用这个方法。只有在考虑浏览器兼容问题的时候（因为1，2两种方法所有浏览器都通用）才使用1，2方法。
-4. 特别需要注意在监听器函数里this对象的指向问题。`addEventListener()`调用的监听函数会指向Element标签内的attribute, 而标签内的`onclick=func()`则会指向window。如需要指向当前标签内的attribute，需要写成这种形式`onclick=func(this)`。
-
-#### 事件的传播
-事件的传播有三个阶段`capture phase`,  `target phase`,  `bubbling phase`， 其中需要注意target阶段相当于合并了capture和bubbling的阶段， 所以在把useCapture设定true和false的时候，会分别执行，只是显示的形式会是target而已。[举例](http://codepen.io/stevenz1987/pen/kXGxxw)。
-
-事件的代理是一种通过父节点定义监听函数，利用冒泡阶段的级联触发，监听子元素事件的方式。[举例](http://codepen.io/stevenz1987/pen/XKZzkV)
-
-#### Event对象
-可以通过如下方法自定义，并触发一个Event对象
 ```javascript
 // bubbles 表示对象是否冒泡
 var ev = new Event(“look”, {“bubbles”: true, “cancelable”: false});

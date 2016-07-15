@@ -4,17 +4,17 @@
 #### 1. HTML 6个不同个Node类型
 
 1. Document， 对应`Node.DOCUMENT_NODE` (9)
-* e.g. `window.document`
+   * e.g. `window.document`
 2. DocumentType, 对应`Node.DOCUMENT_TYPE_NODE`(10)
-* e.g. `<!DOCTYPE html>`
+   * e.g. `<!DOCTYPE html>`
 3. ELEMENT, 对应`Node.ELEMENT_NODE` (1)
-* e.g. `<body> <a>`
+   * e.g. `<body> <a>`
 4. Attribute, 对应`Node.ATTRIBUTE_NODE` (2)
-* e.g. `<a class=“right”/>`
+   * e.g. `<a class=“right”/>`
 5. Text,  对应`Node.TEXT_NODE` (3)
-* e.g. `#Text`
+   * e.g. `#Text`
 6. DocumentFragment, 对应`Node.DOCUMENT_FRAGMENT_NODE` (11)
-
+   
 
 #### 2. Node的基本属性
 

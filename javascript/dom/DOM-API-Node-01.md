@@ -71,7 +71,7 @@ element.style.color=red
 - `children()`
 
 
-Interview Questions:
-1. How to delete a node from it’s parent?
-2. How to recursively print all the nodes in the document?
-3. How to remove all the child nodes from their parent node?
+## Interview Questions:  
+1. How to delete a node from it’s parent?  
+2. How to recursively print all the nodes in the document?  
+3. How to remove all the child nodes from their parent node?  
